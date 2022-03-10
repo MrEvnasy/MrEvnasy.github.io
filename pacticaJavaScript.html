@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js"></script>
+    <title>Práctica JavaScript</title>
+</head>
+<body style="background-color: #d3d3d1">
+    <h1 style="text-align: center; text-transform: uppercase;">Práctica JavaScript</h1><hr>
+    
+    <div style="color: black; text-align: center;" id="div1" onmouseover="change()" onmouseout="comeback()">
+        Texto del div 1
+    </div><br>
+
+    <div style="text-align: center;">
+        <button style="align-content: center;" onclick="change()">Cambiar Color</button>
+    </div>
+
+    <h2 style="text-align: center; text-transform: uppercase;">Productos</h2><hr>
+
+    <h3 style="font-family: arial; ">Producto 1 <input type="number" value="0" id="p1" onchange="refreshall(document.getElementById('p1').value)"></h3>
+    <h3 style="font-family: arial; ">Producto 2 <input type="number" value="0" id="p2" onchange="refreshall(document.getElementById('p2').value)"></h3>
+    <h3 style="font-family: arial; ">Producto 3 <input type="number" value="0" id="p3" onchange="refreshall(document.getElementById('p3').value)"></h3>
+    <h3 style="font-family: arial; ">Producto 4 <input type="number" value="0" id="p4" onchange="refreshall(document.getElementById('p4').value)"></h3>
+
+    <h3 style="font-family: arial; ">Total: <input type="number" readonly value="0" id="total"> </h3>
+    
+</body>
+</html>
